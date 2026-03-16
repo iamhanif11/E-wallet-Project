@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/login.css">
+</head>
+<body>
+    <main class="container">
+        <!--bagian kiri-->
+        <section class="left">
+            <div class="logo">
+                <img class="logo_image" src="../asset/money_wallet.png" alt="logo">
+                <p class="brand">E-Wallet</p>
+            </div>
+
+            <div class="desc">
+                <h1 class="desc1">
+                    Hello Welcome Back 👋
+                </h1>
+                <p class="desc2">
+                    Fill out the form correctly or you can login with several option.
+                </p>
+            </div>
+
+            <div class="social-login">
+                <button class="btn-google">
+                    <img src="..\asset\flat-color-icons_google.png" alt="icon google">
+                    <span>Sign In With Google</span>
+                </button>
+
+                <button class="btn-fb">
+                    <img src="../asset/bx_bxl-facebook-circle.png" alt="icon FB">
+                    <span>Sign In With Facebook</span>
+                </button>
+            </div>
+
+            <div class="divider">
+                <hr>
+                <span>Or</span>
+                <hr>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="email">EMail</label>
+                    <div class="input-box">
+                        <span class="icon"><img src="../asset/Vector.svg" alt="icon_email"></span>
+                        <input type="email" id="email" placeholder="Enter Your Email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-box">
+                        <span class="icon"><img src="../asset/Password.png" alt="icon_password"></span>
+                        <input type="password" placeholder="Enter Your Password" id="password">
+                        <span><img src="../asset/EyeSlash.png" alt="icon_eyeslash"></span>
+                    </div>
+                    
+                </div>
+            </form>
+
+            <button class="btn-submit">Login</button>
+
+            <div class="register">
+                <p>Not Have An Account? <a href="../pages/register.html">Register</a></p>
+                
+            </div>
+        </section>
+
+        <!--bagian kanan-->
+        <aside class="illustration">
+            <img src="../asset/pay_regist.png" alt="illustration">
+        </aside>
+
+    </main>
+</body>
+</html>

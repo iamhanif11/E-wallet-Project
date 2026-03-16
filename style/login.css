@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary:rgb(41, 72, 255);
+    --secondary: white;
+
+}
+
+.container{
+    display: flex;
+    overflow: hidden;
+    height:auto;
+    background-color: var(--primary);
+}
+
+.left{
+    width: 50%;
+    background-color: var(--secondary);
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.logo_image{
+    width: 32px;
+    height: 32px;
+}
+
+.logo{
+    display: flex;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.brand{
+    font-size: 28px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--primary);
+}
+
+.desc1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 8px 0;
+}
+
+.desc2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    padding: 8px 0;
+}
+
+/*button side*/
+.social-login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-google{
+    width: 100%;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid #E8E8E8;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn-fb{
+    width: 100%;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid #E8E8E8;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn-google:hover, .btn-fb:hover{
+    background-color: #eeeeee
+    ;
+}
+
+/*divider style*/
+.divider{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.divider hr{
+    flex: 1;
+    border: 1px solid #DEDEDE;
+}
+
+.divider span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #DEDEDE;
+}
+
+/*form style*/
+.form-group{
+    margin: 10px 0;
+}
+
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.input-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 4px;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    background-color: #FCFDFE;
+    margin: 10px 0;
+}
+.icon{
+    margin: 8px;
+    color: #4F5665 ;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/*submit side*/
+.btn-submit{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.register{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.register a{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/*right side*/
+.illustration{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #7B9BFF 0%, #3868FD 72%);
+}
+
+.illustration img{
+    width: 700px;
+    
+}

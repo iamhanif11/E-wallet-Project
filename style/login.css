@@ -7,9 +7,11 @@
 :root{
     --primary:rgb(41, 72, 255);
     --secondary: white;
-
 }
 
+body{
+    width: 100%;
+}
 .container{
     display: flex;
     overflow: hidden;
@@ -197,4 +199,51 @@ input{
 .illustration img{
     width: 700px;
     
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .illustration img {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    padding: 40px 24px;
+    border-radius: 0;
+    justify-content: flex-start;
+  }
+
+  .brand {
+    font-size: 22px;
+  }
+
+  .desc1 {
+    font-size: 20px;
+  }
+
+  .desc2 {
+    font-size: 13px;
+  }
+
+  .btn-google,
+  .btn-fb {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .btn-submit {
+    font-size: 16px;
+  }
+
+  .register {
+    font-size: 14px;
+  }
 }

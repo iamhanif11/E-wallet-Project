@@ -10,6 +10,9 @@
 
 }
 
+body{
+    width: 100%;
+}
 
 .container{
     display: flex;
@@ -41,6 +44,7 @@
 
 .brand{
     font-size: 28px;
+    font-weight: 600;
     font-family: 'Nunito Sans', sans-serif;
     color: var(--primary);
 }
@@ -198,4 +202,45 @@ input{
 .illustration img{
     width: 700px;
     
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;  
+    min-height: 100vh;
+  }
+
+
+  .illustration img {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    padding: 40px 24px;
+    border-radius: 0;        
+
+  .desc1 {
+    font-size: 22px;
+  }
+
+  .desc2 {
+    font-size: 14px;
+  }
+
+  .btn-google,
+  .btn-fb {
+    font-size: 15px;
+    padding: 10px 16px;
+  }
+
+  .btn-submit {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
 }

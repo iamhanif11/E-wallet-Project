@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style/transferDetail.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo_image" src="../asset/money_wallet.png" alt="logo" />
+        <p class="brand">E-Wallet</p>
+      </div>
+
+      <div class="profil">
+        <p>Ghaluh Wizard</p>
+        <img
+          class="avatar"
+          src="../asset/Ellipse 185.svg"
+          class="pp"
+          alt="photo"
+        />
+        <img src="../asset/down.svg" alt="dropdown" />
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="menu-bar">
+        <button onclick="location.href='../pages/dashboardV2.html'">
+          <img src="../asset/dashboard-two (1).svg" alt="dashboard" />
+          <p>Dashboard</p>
+        </button>
+        <button onclick="location.href='../pages/transfer.html'">
+          <img src="../asset/Send.svg" alt="transfer" />
+          <p>Transfer</p>
+        </button>
+        <button onclick="location.href='../pages/history.html'">
+          <img src="../asset/history.svg" alt="history" />
+          <p>History</p>
+        </button>
+        <button onclick="location.href='../pages/topUp.html'">
+          <img src="../asset/Upload.svg" alt="top Up" />
+          <p>Top Up</p>
+        </button>
+        <button onclick="location.href='../pages/editProfileNext.html'">
+          <img src="../asset/2 User.svg" alt="profile" />
+          <p>Profile</p>
+        </button>
+        <button class="exit">
+          <img src="../asset/Icon.svg" alt="Exit" />
+          <p>Keluar</p>
+        </button>
+      </aside>
+
+      <main class="content">
+        <div class="page-title">
+          <img src="/asset/Send.svg" alt="icon-transfer" />
+          <p>Transfer Money</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">1</span>
+            <p class="step-label">Find People</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="step active">
+            <span class="step-number">2</span>
+            <p class="step-label">Set Nominal</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <p class="step-label">Finish</p>
+          </div>
+        </div>
+
+        <section class="card-transfer">
+          <div class="people-information">
+            <h3>People Information</h3>
+
+            <div class="people-card">
+              <img src="/asset/Rectangle 648.svg" alt="photo-profile" />
+              <div class="people-detail">
+                <p class="people-name">Ghaluh 1</p>
+                <p class="people-phone">(239) 555-0108</p>
+                <div class="people-badge">
+                  <img src="/asset/badge.svg" alt="verified" />
+                  <span>Verified</span>
+                </div>
+              </div>
+              <button class="btn-star">
+                <img src="/asset/Star.svg" alt="favorite" />
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <h3>Amount</h3>
+            <p class="form-desc">
+              Type the amount you want to transfer and then press continue to
+              the next steps.
+            </p>
+            <div class="input-box">
+              <img src="/asset/money.png" alt="icon-money" />
+              <input type="number" placeholder="Enter Nominal Transfer" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <h3>Notes</h3>
+            <p class="form-desc">
+              You can add some notes for this transfer such as payment coffee or
+              something
+            </p>
+            <textarea placeholder="Enter Some Notes"></textarea>
+          </div>
+
+          <button class="btn-submit">Submit & Transfer</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
